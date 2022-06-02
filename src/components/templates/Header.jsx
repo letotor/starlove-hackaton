@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/images/logo192.png'
+import Logo from '../../assets/images/logobb8.png'
 import './Header.css'
 
 const Header = () => {
     return (
-    <header className="header">
-        <img src={Logo} alt="logo" className="App-logo" />
+    <header className="header">        
       <nav className="header-links">
-        <Link to='/'className='home-link'>Home</Link>
+          <Link to='/' className='home-link'>Home</Link>
+          <img src={Logo} alt="logo" className="App-logo" />
         <Link to='/goodies' className='goodies-link'>Goodies</Link>
       </nav>
     </header>
