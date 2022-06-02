@@ -1,4 +1,23 @@
-.container{
-    display:grid;
+/***************** animation Titre doctoshop *****************/
+.grid-container {
+    /* margin:auto; */
+    display: grid;
+    margin: 4rem;
+    /* border: 1px solid var(--secondary-color); */
+    border-radius: 10px;
+    justify-content: center;
+    align-items: stretch;
+    justify-items: center;
+    place-content: center;
+
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    /* grid-template-rows: repeat(5, 1fr); */
+    /* grid:
+  "card1" "card2" "card3" "card1" 1fr
+  "card5" "card2" "card2" "card2" "card2"1fr
+  "card2"  "card2"  "card2" "card2" 1fr 
+  1fr 1fr 1fr 1fr 1fr; */
+    gap: 20px;
 
 }
+

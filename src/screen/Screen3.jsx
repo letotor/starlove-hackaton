@@ -7,7 +7,7 @@ import Main from "../components/templates/Main"
 
 const Screen3 = () => {
   return (
-    <div>
+    <div className='app-container'>
         <Header />
             <Main >
                <Forms/>
