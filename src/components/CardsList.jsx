@@ -18,19 +18,14 @@ const CardsList = () => {
             
             <section>
             <h1>Cards list</h1>
-            <div className="grid-container cards">
-                     
-                            <Cards  />
-                            <Cards  />
-                            <Cards  />
-                            <Cards  />
-                            <Cards  />
-                  
-               
-            </div>
-        
+             <div className="grid-container cards">
+                {data.filter(element => element.gender = 'male').map(elm => {
+                  return(                  
+                        <Cards name={elm.name} gender={elm.gender} />
+                  )
+                })}
+               </div>
             </section>
-
             </div>
             )
 }
