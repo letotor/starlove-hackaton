@@ -5,7 +5,7 @@ import Main from "../components/templates/Main"
 
 const Goodies = () => {
     return(
-        <div>
+        <div className="app-container">
             <Header />
             <Main >
                <Forms/>

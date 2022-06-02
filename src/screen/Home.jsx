@@ -6,12 +6,12 @@ import Forms from '../components/Forms'
 import './Home.css'
 const Home = () => {
     return(
-        <div className="home">
-            <Header />
-            <Main >
+        <div className="home app-container">
+            <Header className="header"/>
+            <Main  className="main" >
                <Forms/>
-            </Main>
-            <Footer />
+            </Main >
+            <Footer className="footer"/>
         </div>
     )
 }
