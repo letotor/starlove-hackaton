@@ -1,9 +1,17 @@
-import React from 'react'
+import Header from '../components/templates/Header'
+import Main from '../components/templates/Main'
+import Footer from '../components/templates/Footer'
 
-function Home() {
-  return (
-    <div>Home Page</div>
-  )
+import './Home.css'
+const Home = () => {
+    return(
+        <div className="home">
+            <Header />
+            <h1>Azule home!!!</h1>
+            <Main />
+            <Footer />
+        </div>
+    )
 }
 
 export default Home
