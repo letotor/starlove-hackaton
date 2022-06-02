@@ -17,6 +17,7 @@ function App() {
         <Route path='/goodies' element={ <Goodies />} />
         <Route path='/screen3' element={ <Screen3 />} />
     </Routes>
+
   </div>
   );
 }
