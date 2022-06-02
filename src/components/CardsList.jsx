@@ -15,12 +15,18 @@ const CardsList = () => {
 
     return (
         <div>
-            {}
+            
             <section>
             <h1>Cards list</h1>
-            <div className="container">
+            <div className="grid-container cards">
                      
-                <Cards  />
+                            <Cards  />
+                            <Cards  />
+                            <Cards  />
+                            <Cards  />
+                            <Cards  />
+                  
+               
             </div>
         
             </section>

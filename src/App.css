@@ -161,7 +161,7 @@ body {
   display: grid;
   grid:
     "header" 60px 
-    "main" minmax(20vh,80vh) 
+    "main" auto
     "footer" 80px/ 
     100%;
 }
