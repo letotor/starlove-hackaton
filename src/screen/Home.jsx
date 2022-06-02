@@ -10,7 +10,7 @@ const Home = () => {
         <div className="home app-container">
             <Header className="header"/>
             <Main  className="main" >
-               {/* <Forms/> */}
+             {/* (formsValidate) && <Forms/>  */}
                <CardsList/>
             </Main >
             <Footer className="footer"/>

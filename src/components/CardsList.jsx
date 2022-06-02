@@ -19,10 +19,9 @@ const CardsList = () => {
             <section>
             <h1>Cards list</h1>
              <div className="grid-container cards">
-                {data.filter(element => element.gender = 'female').map(elm => {
+                {data.filter(element => element.gender ='female').map(elm => {
                   return(                  
                         <Cards name={elm.name} gender={elm.gender} img={elm.image} eye={elm.gender}  species={elm.species}
-                        height={elm.height}
                         />
                   )
                 })}
