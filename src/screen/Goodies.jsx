@@ -1,11 +1,16 @@
+import Forms from "../components/Forms"
+import Footer from "../components/templates/Footer"
 import Header from "../components/templates/Header"
+import Main from "../components/templates/Main"
 
 const Goodies = () => {
     return(
-        <div className ="goodies">
+        <div>
             <Header />
-
-            <h1>Azule Goodies!!!</h1>
+            <Main >
+               <Forms/>
+            </Main>
+            <Footer />
         </div>
     )
 }

@@ -18,7 +18,11 @@ const CardsList = () => {
             {}
             <section>
             <h1>Cards list</h1>
-            <Cards  />
+            <div className="container">
+                     
+                <Cards  />
+            </div>
+        
             </section>
 
             </div>

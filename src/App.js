@@ -5,6 +5,8 @@ import Header from './components/templates/Header';
 import Home from './screen/Home';
 import Goodies from './screen/Goodies';
 
+import './App.css'
+
 
 
 
