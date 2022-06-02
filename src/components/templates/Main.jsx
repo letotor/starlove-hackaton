@@ -1,12 +1,15 @@
-import Cards from '../Cards'
+
+import ChoiceForm from '../ChoiceForm'
+
 import './Main.css'
+
 const Main = () => {
     return (
         <div>
            <h1>Main qui appel Card</h1>
-           <Cards />
+           <ChoiceForm />
         </div>
     )
 }
 
-export default Main
+export default Main;
