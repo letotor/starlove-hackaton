@@ -29,7 +29,7 @@
     justify-content: space-evenly;
     width: 100%;
     height: auto;
-    background: linear-gradient(45deg, black,pink);
+    background: linear-gradient(45deg, #333,#d896d8);
     padding:2rem 0;
 }
 

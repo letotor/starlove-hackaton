@@ -36,7 +36,7 @@ const Header = () => {
             <>
                 <Link to='/' className='home-link'>Home</Link>
                 <img src={Logo} alt="logo" className="App-logo" />
-                <Link to='/goodies' className='goodies-link'>Goodies</Link>
+                <Link to='/goodies' className='goodies-link'>Truelove</Link>
                 {/* <Link to='/screen3'>Screen</Link> */}
 
             </>
