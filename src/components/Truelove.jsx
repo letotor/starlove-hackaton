@@ -44,11 +44,13 @@ function Truelove() {
 
 
         if(loveScore < 1 || loveScore > 9 ){
-            setDisplayLove(`Your love score is ${loveScore}, you go together like coke and mentos.`);
+            setDisplayLove(`Votre score d'amour est ${loveScore}, vous allez ensemble comme les mentos dans le Coka...
+            Elle:  "je suis nulle en anglais mais je sais dire 'i love you", je suis nulle en mathématique mais je sais combien tu compte pour moi, je suis nulle en géographie mais je sais où est ta place...dans mon cœur" et...
+            Lui: "je suis nul en anatomie, mais je sais où je vais te la mettre..."`);
         }else if (loveScore >= 4 && loveScore <= 8){
-            setDisplayLove(`Your love score is ${loveScore}, you are alright together.`);
+            setDisplayLove(`Votre score d'amour est ${loveScore}, vous êtes bien ensemble..."l'amour platonique est à l'amour charnel ce que l'armée de réserve est à l'armée active"`);
         }else{
-            setDisplayLove(`Your love score is ${loveScore}`);
+            setDisplayLove(`Votre score d'amour est ${loveScore}`);
         }
 
     }
@@ -62,24 +64,29 @@ function Truelove() {
 
   return (
     <>
-        <div className='loveDisplay'>{displayLove}       </div>
-            
+   
+            <div className='container-select'>
+        
+
+    <div className='.bg-img'>
+        <p className='para-love'>"Un Jedi ne connaîtra point la colère, ni la haine, ni l'amour." Un peu rude, non? Ça donne l'impression que toute émotion, tout sentiment, même positifs, sont interdits aux Jedi. C'est loin d'être le cas...</p>
             <select id="name1-select" >
-            <option value="">--Please choose an option--</option>
+            <option value="">--Veuillez choisir une option--</option>
             {characters.map((el) => <option value={el.name}>{el.name}</option> )}
             </select>
 
             <select id="name2-select" >
-            <option value="">--Please choose an option--</option>
+            <option value="">--Veuillez choisir une option--</option>
             {characters.map((el) => <option value={el.name}>{el.name}</option> )}
             </select>
-
-            {displayLove>5 ? <img className="img-love" src="src/assets/images/logo192.png"></img> : <img className="img-love" src="src/assets/images/logobb8.png"></img> }
-           
             
-
-        <button onClick={lesSelectes} >onClick</button>
-  
+            {/* {{displayLove}>5 ? <img className="img-love"></img> : <img className="img-love" src="src/assets/images/logobb8.png"></img> } */}
+         
+        <button className="btn-select" onClick={lesSelectes} >Click Lover</button>
+        <div className='loveDisplay'>{displayLove}</div>
+        </div>
+        </div>
+        
     </>
   )
 }
