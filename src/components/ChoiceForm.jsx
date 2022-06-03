@@ -45,7 +45,7 @@ function ChoiceForm () {
                     {!isOk && <form className="form">
                         <h2>Make your choices !</h2>
                         <p>Choose gender</p>
-                        <select className="selector" gender={gender} onChange={ e => setGender (e.target.value)} >
+                        <select className="selector" gender={gender} onChange={ e => setGender (e.target.value)}>
                             <option value='male'>male</option>
                             <option value='female'>female</option>
                         </select>

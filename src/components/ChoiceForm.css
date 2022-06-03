@@ -56,18 +56,33 @@
 .form h2 {
     margin-bottom: 32px;
     color: rgb(255, 255, 255);
+    font-size: 3rem;
 }
 
-.selector{
+.form p {
+    font-size: 2rem;
+}
+.selector,option{
     margin: 10px;
-    width: 500px;
-    height: 30px;
+    width:265px;
+    max-width: 600px;
+    height: 4rem;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
+    font-size: 2rem;
+        /* outline: none; */
 }
 
 .value{
     color:black;
 }
+
+.selector option{
+    heught:3rem;
+}
+
+
+
+
 
