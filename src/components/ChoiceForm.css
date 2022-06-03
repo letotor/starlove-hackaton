@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+button{
+    text-align: center;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.containForm p {
+    color: rgb(255, 255, 255);
+    margin-top: 16px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 600px;
+    margin: 10%;
+    padding: 8px;
+    border-radius: 25px;
+    background-color: #d896d8;
+    min-width: 500px;
+}
+.form h2 {
+    margin-bottom: 32px;
+    color: rgb(255, 255, 255);
+}
+
+.selector{
+    margin: 10px;
+    width: 500px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.value{
+    color:black;
+}
+

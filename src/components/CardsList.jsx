@@ -20,6 +20,7 @@ const CardsList = () => {
         .then((res) => setData(res))
         
     }, [])
+
    
    
     // data.filter(element => element.gender == 'female').map(elm => console.log(elm))
@@ -34,11 +35,13 @@ const CardsList = () => {
         // setKeyCard(elm.id)
     }
 
+
  let count=0;
     return (
         <div>  
             <section>
             <h1>Cards list</h1>
+
            
            {!isOk && 
             <div className="grid-container cards">
@@ -48,6 +51,7 @@ const CardsList = () => {
                         <Cards  name={elm.name} gender={elm.gender} img={elm.image} eye={elm.gender}  species={elm.species} />
                         <button onClick={()=> {callCardDetail(elm.id)}}>OK</button>
                     </div>
+
                   )
                 })}
             </div>
