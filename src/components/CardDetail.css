@@ -74,3 +74,17 @@ li{
     border: 1px solid white;
   
 }
+
+@media screen and (max-width: 732px) {
+
+.card-container {
+
+    flex-direction: column;
+    align-content: center;
+
+}
+.card-container img{
+    margin-right: 2rem;
+   border-radius:50%;
+}
+}

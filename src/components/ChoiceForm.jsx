@@ -36,20 +36,21 @@ function ChoiceForm () {
 
             <div>
                 <section>
-
+                        <div className="container-flex">
                     <div className="container-section">
-                        <div>
+                       
 
                     <h2>Si tu veux faire des rencontres, chez <span class="brand"> StarLove</span>, on est là pour t’aider à transformer les possibilités en réalité.</h2>
                     <br/> 
                     <h2>Faire des <span class="brand2">rencontres</span> à traver toute la galaxie n’a jamais été aussi <span class="brand2">facile</span>.</h2>
-                        </div>
+                        
+                    </div>
                     </div>
                 </section>
                
                 
                 <div className="containForm">    
-                <div className="backend">
+                <div className="backend container-flex">
                     {!isOk && <form className="form">
                         <h2>Make your choices !</h2>
                         <p>Choose gender</p>

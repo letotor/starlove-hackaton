@@ -6,40 +6,55 @@
     border-radius: 5px;
     cursor: pointer;
 } */
+
+h2 {
+    font-size: 3rem;
+}
+
+.container-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+
 .container-section {
     color: white;
-    padding : 2rem 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    padding: 2rem 1rem;
     width: 80%;
-    margin:5rem auto;
+    margin: 3rem;
+
+
+
     border-radius: 25px;
-    min-width: 500px;
 
     background-color:
         rgba(233, 232, 232, 0.194);
     box-shadow: 0 0 10px rgba(238, 233, 233, 0.25);
     border-radius: 15px;
 }
-.container-section .brand{
-    color:#5f04aa;
-    font-size: 3rem ;
-    font-style: italic;
+
+
+.container-section .brand {
+    color: #5f04aa;
+    font-size: 3rem;
+    font-style: oblique;
+    font-weight: 700;
 
 }
 
 .container-section .brand2 {
-    color: rgb(241, 142, 233);;
+    color: rgb(241, 142, 233);
+    ;
     font-style: italic;
-    font-size: ;
+
 
 }
 
-.container-section h2{
+/* .container-section h2{
     font-size:3rem;
-}
+} */
 .ConceptForm {
     color: white;
     height: 200px;
@@ -48,56 +63,54 @@
     justify-content: center;
     align-items: center;
     width: 80%;
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
+
     border-radius: 25px;
     min-width: 500px;
 
-    background-color: 
-    rgba(233, 232, 232, 0.194);
-    box-shadow: 0 0 10px 
-    rgba(238, 233, 233, 0.25);
+    background-color:
+        rgba(233, 232, 232, 0.194);
+    box-shadow: 0 0 10px rgba(238, 233, 233, 0.25);
     border-radius: 15px;
 }
 
-.backend{
+.backend {
     background: url('../assets/images/gouttes-deau-pluie-fond-bleu.jpg') center center/cover;
     display: flex;
-        justify-content: center;
+
 
 
 }
+
 .containForm p {
     color: rgb(255, 255, 255);
     margin-top: 16px;
     background-size: 100%;
- 
+    padding: 2rem;
 
-   
+
+
 }
+
 .form {
     display: flex;
-   
+    margin: 4rem;
     flex-direction: column;
     background-color: azure;
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: 600px;
-    margin: 10%;
-    margin-top: 5%;
+
     padding: 8px;
     border-radius: 25px;
     min-width: 500px;
 
-    background-color: 
-    rgba(233, 232, 232, 0.194);
-    box-shadow: 0 0 10px 
-    rgba(238, 233, 233, 0.25);
+    background-color:
+        rgba(233, 232, 232, 0.194);
+    box-shadow: 0 0 10px rgba(238, 233, 233, 0.25);
     backdrop-filter: blur(10px);
     border-radius: 15px;
 }
+
 .form h2 {
     margin-bottom: 32px;
     color: rgb(255, 255, 255);
@@ -107,27 +120,78 @@
 .form p {
     font-size: 2rem;
 }
-.selector,option{
+
+.selector,
+option {
     margin: 10px;
-    width:265px;
+    width: 265px;
     max-width: 600px;
     height: 4rem;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
     font-size: 2rem;
-        /* outline: none; */
+    /* outline: none; */
 }
 
-.value{
-    color:black;
+.value {
+    color: black;
 }
 
-.selector option{
-    heught:3rem;
+.selector option {
+    height: 3rem;
 }
 
 
 
 
 
+@media screen and (max-width: 732px) {
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .brand {
+        font-size: 1.8rem;
+    }
+
+
+    .container-section {
+        margin: 1rem;
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
+    .container-section .brand {
+
+        font-size: 2rem;
+    }
+
+    .form {
+        margin: 1rem;
+        min-width: initial;
+
+    }
+
+    .backend {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .selector,
+    option {
+        height: 2rem;
+        font-size: 1.6rem;
+        width:150px;
+    }
+
+
+    .form p {
+        font-size: 1.8rem;
+    }
+
+    .form h2 {
+        font-size: 2rem;
+    }
+}

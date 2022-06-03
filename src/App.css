@@ -31,6 +31,7 @@ h2,
 h3,
 h4 {
   margin: 0;
+  font-style:3rem;
 }
 
 ul {
@@ -226,3 +227,8 @@ body {
 }
 
 
+@media screen and (max-width: 732px) {
+  h2{
+    font-size:1.6rem;
+  }
+}
