@@ -14,6 +14,7 @@ const Home = () => {
             <Header className="header"/>
 
             <Main  className="main" >
+              
                 <ChoiceForm />
                
             </Main >

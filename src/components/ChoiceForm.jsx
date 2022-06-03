@@ -35,13 +35,21 @@ function ChoiceForm () {
         return (
 
             <div>
-                <div className="ConceptForm">
-                <h2>Si tu veux faire des rencontres, chez StarLove, on est là pour t’aider à transformer les possibilités en réalité.</h2>
-                <br/> 
-                <h2>Faire des rencontres à traver toute la galaxie n’a jamais été aussi facile.</h2>
-                </div>
+                <section>
+
+                    <div className="container-section">
+                        <div>
+
+                    <h2>Si tu veux faire des rencontres, chez <span class="brand"> StarLove</span>, on est là pour t’aider à transformer les possibilités en réalité.</h2>
+                    <br/> 
+                    <h2>Faire des <span class="brand2">rencontres</span> à traver toute la galaxie n’a jamais été aussi <span class="brand2">facile</span>.</h2>
+                        </div>
+                    </div>
+                </section>
+               
                 
                 <div className="containForm">    
+                <div className="backend">
                     {!isOk && <form className="form">
                         <h2>Make your choices !</h2>
                         <p>Choose gender</p>
@@ -90,6 +98,7 @@ function ChoiceForm () {
                         {/* <button className='btn-form' onClick= {check} >Send</button> */}
     
                     </form>}
+                    </div>
                     {isOk && <Cardslist gender={gender} homeworld={homeworld} species={species} />} 
                 </div>
             </div>    
