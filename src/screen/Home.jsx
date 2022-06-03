@@ -2,9 +2,10 @@ import Header from '../components/templates/Header'
 import Main from '../components/templates/Main'
 import ChoiceForm from '../components/ChoiceForm'
 import Footer from '../components/templates/Footer'
+import Cards from '../components/Cards'
 
 import './Home.css'
-import CardsList from '../components/CardsList'
+
 const Home = () => {
     return(
 
@@ -12,7 +13,7 @@ const Home = () => {
             <Header className="header"/>
             <Main  className="main" >
                 <ChoiceForm />
-                <CardsList />
+                <Cards />
             </Main >
             <Footer className="footer"/>
         </div>

@@ -2,13 +2,14 @@ import React from 'react'
 import './Cards.css'
 
 
-const Cards = ({gender, homeworld, species}) => {
+const Cards = ({gender, homeworld, species, name, img }) => {
   return (
     <div>
-      <p>cards</p>
-      <h2>le genre {gender}</h2>
-      <h2>la planete {homeworld}</h2>
-      <h2>l'espece {species}</h2>
+      <p>{name}</p>
+      <img src={img} ></img>
+      <h2> {gender}</h2>
+      <h2> {homeworld}</h2>
+      <h2> {species}</h2>
     </div>
   )
 }
