@@ -24,6 +24,13 @@ function ChoiceForm () {
             console.log(isOk);
         }
 
+        const backScreen = (e) =>{
+            setIsOk(false)
+            
+            
+        }
+
+
         
         return (
 
@@ -75,9 +82,13 @@ function ChoiceForm () {
                             <option value='neimoidian'>neimoidian</option>
                             
                         </select>
-                        <p>Send your choices</p>
-                          <Button name={"Send"} className='btn-form' onClick= {check}/>
+                        {/* <p>Send your choices</p> */}
+                  
+                            <Button name={"Send you choice"}  onClick= {check}/>
+                     
+                         
                         {/* <button className='btn-form' onClick= {check} >Send</button> */}
+    
                     </form>}
                     {isOk && <Cardslist gender={gender} homeworld={homeworld} species={species} />} 
                 </div>

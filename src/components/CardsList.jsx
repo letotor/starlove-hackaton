@@ -8,6 +8,7 @@ import Button from'./BoutonBack';
 const CardsList = ({gender,species,homeworld}) => {
     const [data, setData] = useState([]);
     const [isOk, setIsOk] = useState(false);
+    const [isScreenPrec, SetIsScreenPrec] = useState(false);
     const[keyCard, setKeyCard]= useState(0);
     
     // const gender="female"
@@ -32,6 +33,7 @@ const CardsList = ({gender,species,homeworld}) => {
          setIsOk(true);
     }
     const onClikCard = (test)=>{
+         setIsOk(false);
         console.log(test)
         // setKeyCard(elm.id)
     }
@@ -60,7 +62,7 @@ const CardsList = ({gender,species,homeworld}) => {
 
             {isOk && 
             <CardDetail id={keyCard}/>}
-            <Button />
+            <Button onClick={onClikCard}/>
             </section>
         </div>
             )
