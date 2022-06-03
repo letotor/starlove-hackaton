@@ -40,7 +40,7 @@ const CardsList = ({gender,species,homeworld}) => {
     return (
         <div>  
             <section>
-            <h1>Cards list</h1>
+            {/* <h1>Cards list</h1> */}
 
            
            {!isOk && 
