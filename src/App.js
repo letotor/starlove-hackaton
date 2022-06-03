@@ -5,6 +5,7 @@ import Home from './screen/Home';
 import Goodies from './screen/Goodies';
 import Screen3 from './screen/Screen3';
 import './App.css'
+import 'font-awesome/css/font-awesome.min.css';
 
 
 

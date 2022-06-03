@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import './CardDetail.css'
-
+import 'font-awesome/css/font-awesome.min.css';
+import { Link } from 'react-router-dom';
 
 const CardDetail = ({id}) => {
 const [data, setData] = useState([]);
@@ -12,29 +13,26 @@ const [data, setData] = useState([]);
         
     }, [])
 
-let keyData=Object.getOwnPropertyNames(data);
+let keyData=Object.getOwnPropertyNames(data).filter(elmt=>elmt!="image" && elmt!="id");
 
-keyData.map(elt=>console.log(elt))
-
-    
-  
+// keyData.map(elt=>console.log(elt));
+let count=0;
   return (
     <div className="card-detail">
-      <h1>CARD DETAIL</h1>
+      <h1>Person detail</h1>
       <div className="card-container">
         <img src={data.image}>
         </img>
-        <div class="card-items">
-          {keyData.map(elt=>{
-                      return <li>{elt} : {data[elt]}</li>
-                  })
+        <div className="card-items">
+          {keyData.map(elt=>{ 
+                      return <li key={count++}>{elt} : {data[elt]}</li>
+                  }).filter(el=>el!="id")
                     }
         </div>
           
       </div>
-       
-      
-      
+    
+  <button value="qsqs" href="/"> Back </button>  
     </div>
   )
 }
