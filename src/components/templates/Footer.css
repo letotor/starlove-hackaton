@@ -1,5 +1,13 @@
 .footer{
-    background-color: var( --primary-2);
+    background: linear-gradient(45deg, #333, #d896d8);
     color:var(--text-primary-color); 
     min-height:10vh;   
+}
+
+.footer p{
+    display : flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-top:1rem;
+    font-size: 2rem;
 }
