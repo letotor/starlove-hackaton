@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Cardslist from './CardsList';
 import './ChoiceForm.css'
+import Button from'./BoutonBack';
     
 function ChoiceForm () {
         const [gender, setGender] = useState('male');
@@ -75,7 +76,8 @@ function ChoiceForm () {
                             
                         </select>
                         <p>Send your choices</p>
-                        <button className='btn-form' onClick= {check} >Send</button>
+                          <Button name={"Send"} className='btn-form' onClick= {check}/>
+                        {/* <button className='btn-form' onClick= {check} >Send</button> */}
                     </form>}
                     {isOk && <Cardslist gender={gender} homeworld={homeworld} species={species} />} 
                 </div>

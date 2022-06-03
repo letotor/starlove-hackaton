@@ -3,6 +3,7 @@ import './CardsList.css'
 import Cards from './Cards'
 import CardDetail  from './CardDetail'
 import '../debug.css'
+import Button from'./BoutonBack';
 
 const CardsList = ({gender,species,homeworld}) => {
     const [data, setData] = useState([]);
@@ -59,7 +60,7 @@ const CardsList = ({gender,species,homeworld}) => {
 
             {isOk && 
             <CardDetail id={keyCard}/>}
-
+            <Button />
             </section>
         </div>
             )

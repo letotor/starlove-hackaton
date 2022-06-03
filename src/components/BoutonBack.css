@@ -1,0 +1,23 @@
+.button-back {
+    justify-self: start;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    background-color: #d896d8;
+    ;
+    margin: 1rem;
+    padding: 1rem;
+    color: white;
+    border-radius: 7px;
+    border: 1px solid white;
+    /* height:30px; */
+    width: auto;
+    transition: 0.6s ease-in-out;
+}
+.button-back:hover {
+
+    cursor: pointer;
+    transform: scale(1.1);
+    border: 1px solid white;
+
+}

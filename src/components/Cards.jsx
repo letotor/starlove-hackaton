@@ -2,6 +2,7 @@ import React from 'react'
 import  {useState, useEffect} from 'react'
 import './Cards.css'
 
+
 import CardDetail  from './CardDetail'
 
 
@@ -40,7 +41,7 @@ const Cards = ({name,gender,img,species,homeworld,id,call}) => {
                         <span className="card-critere">{gender}</span>
                         <span className="card-critere">{homeworld}</span>
                   </div>
-            
+             
                   <button className="card-button" onClick={call}>add To Love ?</button>
 
                   
