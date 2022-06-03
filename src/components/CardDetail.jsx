@@ -33,10 +33,6 @@ let count=0;
       </div>
     
   <button value="qsqs" href="/"> Back </button>  
-      
-       
-      
-      
     </div>
   )
 }

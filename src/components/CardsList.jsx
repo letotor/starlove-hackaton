@@ -45,11 +45,11 @@ const CardsList = ({gender,species,homeworld}) => {
            
            {!isOk && 
             <div className="grid-container cards">
-                {data.filter(element => element.gender ==gender && element.species ==species).map(elm => {
+                {data.filter(element => element.gender ==gender && element.species ==species ).map(elm => {
                   return(   
                      <div key={elm.id} >                  
-                        <Cards  name={elm.name} gender={elm.gender} img={elm.image} eye={elm.gender}  species={elm.species} />
-                        <button onClick={()=> {callCardDetail(elm.id)}}>OK</button>
+                        <Cards  name={elm.name} gender={elm.gender} img={elm.image} homeworld={elm.homeworld}  species={elm.species} id={elm.id} call= {()=> {callCardDetail(elm.id)}}/>
+     
                     </div>
 
                   )
