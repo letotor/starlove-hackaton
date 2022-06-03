@@ -64,6 +64,7 @@ function ChoiceForm () {
                     <option value='mon calamari'>mon calamari</option>
                     <option value='sullust'>sullust</option>
                     <option value='neimoidian'>neimoidian</option>
+                    
                 </select>
                 <p>Send your choices</p>
                 <button  onClick= {check} >Send</button>
