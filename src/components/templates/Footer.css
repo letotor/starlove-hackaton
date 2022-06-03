@@ -1,5 +1,5 @@
 .footer{
-    background-color: pink;
-    color:#777; 
+    background-color: var( --primary-2);
+    color:var(--text-primary-color); 
     min-height:10vh;   
 }
