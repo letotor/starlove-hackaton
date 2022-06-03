@@ -160,14 +160,16 @@ body {
   min-height: 100vh;
   display: grid;
   grid:
-    "header" 60px 
+    "header" 100px 
     "main" auto
     "footer" 80px/ 
     100%;
+
 }
 
 .header {
   grid-area: header;
+
 }
 
 .main {
