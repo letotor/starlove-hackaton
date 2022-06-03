@@ -13,7 +13,7 @@ const CardsList = ({gender,species,homeworld}) => {
     // const hairColor="brown"
     // const gender="female";
     // const hairColor= "hairColor";
-
+        console.log({gender,species,homeworld}) 
     useEffect(() => {
         fetch("https://miadil.github.io/starwars-api/api/all.json")
         .then((res) => res.json())
@@ -27,7 +27,7 @@ const CardsList = ({gender,species,homeworld}) => {
 
     const callCardDetail= (id)=>{
         setKeyCard(id);
-        console.log(id)
+
          setIsOk(true);
     }
     const onClikCard = (test)=>{
@@ -45,7 +45,7 @@ const CardsList = ({gender,species,homeworld}) => {
            
            {!isOk && 
             <div className="grid-container cards">
-                {data.filter(element => element.gender ==gender && element.species ==species ).map(elm => {
+                {data.filter(element => element.gender ==gender && element.species ==species && element.homeworld ==homeworld ).map(elm => {
                   return(   
                      <div key={elm.id} >                  
                         <Cards  name={elm.name} gender={elm.gender} img={elm.image} homeworld={elm.homeworld}  species={elm.species} id={elm.id} call= {()=> {callCardDetail(elm.id)}}/>
@@ -58,7 +58,6 @@ const CardsList = ({gender,species,homeworld}) => {
             }
 
             {isOk && 
-
             <CardDetail id={keyCard}/>}
 
             </section>
