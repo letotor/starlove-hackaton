@@ -4,13 +4,13 @@ import Cards from './Cards'
 import CardDetail  from './CardDetail'
 import '../debug.css'
 
-const CardsList = () => {
+const CardsList = ({gender,species,homeworld}) => {
     const [data, setData] = useState([]);
     const [isOk, setIsOk] = useState(false);
     const[keyCard, setKeyCard]= useState(0);
     
-    const gender="female"
-    const hairColor="brown"
+    // const gender="female"
+    // const hairColor="brown"
     // const gender="female";
     // const hairColor= "hairColor";
 
@@ -45,7 +45,7 @@ const CardsList = () => {
            
            {!isOk && 
             <div className="grid-container cards">
-                {data.filter(element => element.gender ==gender && element.hairColor ==hairColor).map(elm => {
+                {data.filter(element => element.gender ==gender && element.species ==species).map(elm => {
                   return(   
                      <div key={elm.id} >                  
                         <Cards  name={elm.name} gender={elm.gender} img={elm.image} eye={elm.gender}  species={elm.species} />

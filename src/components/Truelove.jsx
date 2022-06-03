@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import './Truelove.css'
 
+import './Truelove.css'
 
 function Truelove() {
 
@@ -62,7 +62,7 @@ function Truelove() {
 
   return (
     <>
-        <div className='loveDisplay'>{displayLove}</div>
+        <div className='loveDisplay'>{displayLove}       </div>
             
             <select id="name1-select" >
             <option value="">--Please choose an option--</option>
@@ -73,9 +73,13 @@ function Truelove() {
             <option value="">--Please choose an option--</option>
             {characters.map((el) => <option value={el.name}>{el.name}</option> )}
             </select>
+
+            {displayLove>5 ? <img className="img-love" src="src/assets/images/logo192.png"></img> : <img className="img-love" src="src/assets/images/logobb8.png"></img> }
+           
             
 
         <button onClick={lesSelectes} >onClick</button>
+  
     </>
   )
 }

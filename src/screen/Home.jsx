@@ -15,7 +15,7 @@ const Home = () => {
 
             <Main  className="main" >
                 <ChoiceForm />
-                /* <CardsList /> */
+               
             </Main >
             <Footer className="footer"/>
         </div>

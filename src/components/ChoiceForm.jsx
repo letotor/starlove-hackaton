@@ -67,7 +67,7 @@ function ChoiceForm () {
                     
                 </select>
                 <p>Send your choices</p>
-                <button  onClick= {check} >Send</button>
+                <button className='btn-form' onClick= {check} >Send</button>
             </form>}
             {isOk && <Cardslist gender={gender} homeworld={homeworld} species={species} />}
         </div>
